@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8" />
+    <title>짭쪼름한 담벼락</title>
+    <style>
+@font-face {
+    font-family: 'MangoDdobak-B';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2405-3@1.1/MangoDdobak-B.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'LeeSeoyun';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2202-2@1.0/LeeSeoyun.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+        body {
+          padding: 0;
+          margin: 0;
+          background-image:url('https://cdn.pixabay.com/photo/2013/07/12/13/48/bricks-147309_1280.png');
+          background-size:60%;
+          background-color:white;
+          background-repeat:no-repeat;
+        }
+        .titleblock1 {
+          margin: 0 auto;
+          background-image:url('https://saltystar.naru.pub/watercolor-5013210_1920yel.png');
+          background-position:50%;
+          width:80%;
+          background-size: 70% 130%;
+          text-align:center;
+          background-repeat:no-repeat;
+        }
+        .menublock2 {
+          background-image:url('https://saltystar.naru.pub/watercolor-4111953_1920yg.png');
+          margin: 0 auto;
+          padding: 8px 0px 3px 0px;
+          background-repeat:no-repeat;
+          background-size:cover;
+          border-radius: 300px;
+          width:500px;
+          text-align:center;
+        }
+        .bodyblock3 {
+          margin: 0 auto;
+          padding: 40px;
+          background-color: white;
+          width: 70%;
+          border: 3px dashed #8C8C8C;
+          border-radius: 20px;
+          text-align:center;
+        }
+      .inline-block4 {
+        background-image:url('https://saltystar.naru.pub/post-it-7220537_1280%20(1)-1.png');
+        margin: 0px 10px 0px 10px;
+        padding: 0px 15px 0px 15px;
+        display:inline-block;
+        background-color:white;
+        background-repeat:no-repeat;
+        background-size:cover;
+      }
+      .inline-block5 {
+        margin: 0 auto;
+        padding:10px;
+      }
+      .inline-block6 {
+        margin: 0 auto;
+        padding:0px;
+        display:inline-block;
+        background-image:url('https://cdn.pixabay.com/photo/2023/06/15/18/29/dots-8066290_1280.png');
+        background-size: contain;
+        height:500px;
+        width:670px;
+      }
+      .radius_img1{
+        border-radius:50px;
+      }
+      	h1 {
+          text-shadow: -3px 0 white, 0 3px white, 3px 0 white, 0 -3px white;
+	}
+      .menu-item {
+        position: relative;
+        display: inline-block;
+      }
+
+      .menu-description {
+        display: none;
+        position: absolute;
+        bottom: -20px; /* 아이콘 아래쪽에 설명 표시 */
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: white;
+        color: black;
+        padding: 0px;
+        text-align:center;
+        font-family:'LeeSeoyun';
+      }
+
+      .menu-item:hover .menu-description {
+        display: block;
+      }
+/* 닉네임 입력 박스 크기 */
+.nickname-input {
+    width: 30% !important; /* 크기를 50%로 줄임 */
+    padding: 8px;
+    box-sizing: border-box;
+    border: 1px solid black;
+  border-radius: 10px;
+}
+
+/* 내용 입력 박스 크기 */
+.content-input {
+    width: 50% !important; /* 크기를 50%로 줄임 */
+    padding: 8px;
+    box-sizing: border-box;
+    border: 1px solid black;
+  border-radius: 10px;
+}
+
+/* 비밀번호 입력 박스 크기 */
+.password-input {
+  
+    width: 20% !important; /* 크기를 50%로 줄임 */
+    padding: 8px;
+    box-sizing: border-box;
+    border: 1px solid black;
+   border-radius: 10px;
+}
+
+        /* 게시글 입력 폼 */
+        .form-group {
+            margin-bottom: 10px;
+            text-align: center;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 8px;
+            box-sizing: border-box;
+            border: 2px solid black;
+        }
+
+/* 게시글 목록 스타일 */
+.board {
+    margin: 20px auto; /* 위와 아래 마진은 20px로 설정하고, 좌우 중앙 정렬 */
+    border: 1px dash black;
+    border-radius: 40px;
+    width: 50%; /* 너비는 50%로 설정 */
+    text-align: center;
+}
+
+.board-item {
+    padding: 10px;
+    border-bottom: none; /* 밑줄을 없앰 */
+}
+
+        .board-item h3 {
+          margin: 0 auto;
+          font-size: 18px;
+          font-weight: normal;
+          background-image:url('https://saltystar.naru.pub/watercolor-4111953_1920sb.png');
+          border-radius:40px;
+          width:40%;
+        }
+
+        .board-item p {
+           margin: 5px auto;
+           width:50%;
+           border: 1px solid #E7E7E7;
+           border-radius: 40px;
+          padding: 10px;
+        }
+
+        /* 수정, 삭제 버튼 스타일 */
+        .action-btn {
+            margin: 5px;
+            padding: 5px;
+            background-color: #00D8FF;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 15px;
+        }
+
+        .action-btn.edit {
+            background-color: #FFE400;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="titleblock1">
+        <h1 style="color:black; font-family:'MangoDdobak-B';font-size:80px; text-align:center;">🧂짭쪼름한 담벼락🧂</h1>
+    </div>
+    <div class="menublock2"> 
+        <div class="menu-item">
+          <a href="https://saltystar.naru.pub/home.html">
+            <img width="45" src="https://cdn-icons-png.flaticon.com/128/4711/4711526.png" alt="Home">
+          </a>
+          <div class="menu-description">Home</div>
+        </div>&nbsp&nbsp&nbsp|&nbsp&nbsp&nbsp 
+        <div class="menu-item">
+          <a href="https://saltystar.naru.pub/nacl.html">
+            <img width="45" src="https://cdn-icons-png.flaticon.com/128/8224/8224678.png" alt="NaCl">
+          </a>
+          <div class="menu-description">NaCl</div>
+        </div>&nbsp&nbsp&nbsp|&nbsp&nbsp&nbsp
+        <div class="menu-item">
+          <a href="https://saltystar.naru.pub/trpg.html">
+            <img width="45" src="https://cdn-icons-png.flaticon.com/128/745/745779.png" alt="TRPG">
+          </a>
+          <div class="menu-description">TRPG</div>
+        </div>&nbsp&nbsp&nbsp|&nbsp&nbsp&nbsp
+        <div class="menu-item">
+          <a href="https://saltystar.naru.pub/sing.html">
+            <img width="45" src="https://cdn-icons-png.flaticon.com/128/1830/1830857.png" alt="Sing">
+          </a>
+          <div class="menu-description">Sing</div>
+        </div>&nbsp&nbsp&nbsp|&nbsp&nbsp&nbsp
+        <div class="menu-item">
+          <a href="https://saltystar.naru.pub/guestbook.html">
+            <img width="45" src="https://cdn-icons-png.flaticon.com/128/2665/2665123.png" alt="Guestbook">
+          </a>
+          <div class="menu-description">Guest</div>
+        </div>
+    </div>
+  <br>
+     <div class="bodyblock3"> 
+        <!-- 게시글 입력 폼 -->
+        <div class="form-group">
+            <label for="title"><p style="color:black; font-family:'MangoDdobak-B'; text-align:center; font-size:30px;">📝방명록📝</p></label>
+            <input type="text" id="title" class="nickname-input" placeholder="닉네임을 입력해 주세요!">
+        </div>
+        <div class="form-group">
+            <label for="content">내용</label>
+            <textarea id="content" class="content-input" rows="4" placeholder="내용을 입력해 주세요!"></textarea>
+        </div>
+        <div class="form-group">
+            <label for="password">비밀번호<br> <p style="font-size:15px;">※잘 기억해 주세요 저도 수정 및 삭제가 불가능합니다※</p></label>
+            <input type="password" id="password" class="password-input" placeholder="비밀번호를 입력해 주세요!">
+        </div>
+        <button onclick="addPost()">등록</button><br>
+
+        <!-- 게시글 목록 -->
+        <div id="board" class="board"></div>
+    </div>
+ <script src="https://www.gstatic.com/firebasejs/9.x/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.x/firebase-database.js"></script>
+
+    <script>
+      // Firebase 설정 정보
+      const firebaseConfig = {
+        apiKey: "YOUR_API_KEY",
+        authDomain: "YOUR_AUTH_DOMAIN",
+        databaseURL: "YOUR_DATABASE_URL",
+        projectId: "YOUR_PROJECT_ID",
+        storageBucket: "YOUR_STORAGE_BUCKET",
+        messagingSenderId: "YOUR_MESSAGING_SENDER_ID",
+        appId: "YOUR_APP_ID"
+      };
+
+      // Firebase 초기화
+      const app = firebase.initializeApp(firebaseConfig);
+      const database = firebase.database(app);
+
+      // 게시물 추가 함수
+      function addPost() {
+        const title = document.getElementById("title").value;
+        const content = document.getElementById("content").value;
+        const password = document.getElementById("password").value;
+
+        if (!title || !content || !password) {
+            alert("모든 필드를 입력해 주세요.");
+            return;
+        }
+
+        // Firebase에 게시물 저장
+        const newPostRef = firebase.database().ref("posts").push();
+        newPostRef.set({
+          title: title,
+          content: content,
+          password: password
+        });
+
+        // 입력 필드 초기화
+        document.getElementById("title").value = "";
+        document.getElementById("content").value = "";
+        document.getElementById("password").value = "";
+      }
+
+      // 게시물 로드 함수
+      function loadPosts() {
+        const board = document.getElementById("board");
+        board.innerHTML = "";
+
+        // Firebase에서 게시물 로드
+        firebase.database().ref("posts").on("value", (snapshot) => {
+          board.innerHTML = ""; // 기존 게시물 삭제
+          snapshot.forEach((childSnapshot) => {
+            const postData = childSnapshot.val();
+            const post = document.createElement("div");
+            post.classList.add("board-item");
+            post.innerHTML = `
+              <h3>${postData.title}</h3>
+              <p>${postData.content}</p>
+              <button onclick="deletePost('${childSnapshot.key}')">삭제</button>
+            `;
+            board.prepend(post);
+          });
+        });
+      }
+
+      // 게시물 삭제 함수
+      function deletePost(postKey) {
+        const password = prompt("비밀번호를 입력해 주세요.");
+
+        // Firebase에서 게시물 삭제
+        firebase.database().ref(`posts/${postKey}`).once("value").then((snapshot) => {
+          if (snapshot.val().password === password) {
+            firebase.database().ref(`posts/${postKey}`).remove();
+          } else {
+            alert("비밀번호가 일치하지 않습니다.");
+          }
+        });
+      }
+
+      // 페이지 로드 시 게시물 불러오기
+      window.onload = loadPosts;
+    </script>
+
+    <div class="inline-block5">
+      <div style="text-align: center;">
+        <p style="font-family:'LeeSeoyun';">~BANNER~</p>
+        <a href="https://saltystar.naru.pub"><img src="https://saltystar.naru.pub/%C3%AC%C2%A7%C2%AD%C3%AC%C2%A1%C2%B0%C3%AB%C2%A6%C2%84%C3%AD%C2%95%C2%9C%20%C3%AB%C2%8B%C2%B4%C3%AB%C2%B2%C2%BC%C3%AB%C2%9D%C2%BD%20%C3%AB%C2%B0%C2%B0%C3%AB%C2%84%C2%88.png"></a>　
+      </div>
+    </div>
+</body>
+</html>
